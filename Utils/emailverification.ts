@@ -38,13 +38,13 @@ export const verifyUser =async () => {
           
         })
 
-        const buildfile = path.join(__dirname, "../views/verifyaccount")
-        let mailOption = {
-             // send mail with defined transport object
-           from: '"pepefood 👻❤🎂" <noreply@unityfood.com>',  // sender address
-           to: email, // list of receivers
-           subject: "pepefood", // Subject line
-           html: data // html body
-       }
+    //     const buildfile = path.join(__dirname, "../views/verifyaccount")
+    //     let mailOption = {
+    //          // send mail with defined transport object
+    //        from: '"pepefood 👻❤🎂" <noreply@unityfood.com>',  // sender address
+    //        to: email, // list of receivers
+    //        subject: "pepefood", // Subject line
+    //        html: data // html body
+    //    }
     }
 }
