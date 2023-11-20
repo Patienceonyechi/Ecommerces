@@ -18,11 +18,11 @@ const mainApp = (app) => {
         .use("/api/v1", ProductRoutes_1.default)
         .use("/api/v1", ProfileRoutes_1.default)
         .use("/api/v1", CartRoutes_1.default)
-        .get("/api", (req, res) => {
-        const id = req.params.id;
-        const userName = "pepe";
-        res.render("verifAccount", { userName, id });
-    })
+        // .get("/api/t", (req:any, res:any)=>{
+        //     const id = req.params.id
+        //     const  userName = "pepe"
+        //     res.render("verifAccount",{userName, id})
+        // })
         .get("/api", (req, res) => {
         res.status(200).json({
             message: "api is ready"

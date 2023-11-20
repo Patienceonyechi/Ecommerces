@@ -14,7 +14,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.verifyUser = void 0;
 const googleapis_1 = require("googleapis");
-const path_1 = __importDefault(require("path"));
 const nodemailer_1 = __importDefault(require("nodemailer"));
 // const oAuth = new google.auth.OAuth2()
 const GOOGLE_SECRET = "351615788718-hl84h472gmv0tGOCSPX-HNQA89wTa_vg0KQpUYt5drvz_w0pqpk8r0o8dgptqisrdbr.apps.googleusercontent.com";
@@ -43,15 +42,14 @@ const verifyUser = () => __awaiter(void 0, void 0, void 0, function* () {
                 accessToken: accessToken
             }
         });
-        const buildfile = path_1.default.join(__dirname, "../views/verifyaccount");
-        const data = ();
-        let mailOption = {
-            // send mail with defined transport object
-            from: '"pepefood 👻❤🎂" <noreply@unityfood.com>',
-            to: email,
-            subject: "pepefood",
-            html: data // html body
-        };
+        //     const buildfile = path.join(__dirname, "../views/verifyaccount")
+        //     let mailOption = {
+        //          // send mail with defined transport object
+        //        from: '"pepefood 👻❤🎂" <noreply@unityfood.com>',  // sender address
+        //        to: email, // list of receivers
+        //        subject: "pepefood", // Subject line
+        //        html: data // html body
+        //    }
     }
 });
 exports.verifyUser = verifyUser;
